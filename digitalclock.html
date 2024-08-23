@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        body{
+            height: 100hv;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font:bold 12px ;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(77, 199, 255);
+        }
+        .clock{
+            border:10px solid rgb(31, 29, 29);
+            color: antiquewhite;
+            padding:40px;
+            background: rgb(15,6,176);
+            background: linear-gradient(90deg, rgba(15,6,176,1) 0%, rgba(143,48,187,1) 0%, rgba(34,2,33,1) 0%, rgba(204,12,190,1) 0%, rgba(81,10,78,1) 0%, rgba(187,11,177,1) 0%, rgba(15,36,125,1) 100%, rgba(0,212,255,1) 100%, rgba(94,112,216,1) 100%);
+            align-items: center;
+            margin-top: 60%;
+        }
+        #date{
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        h1:hover{
+            color:blue;
+        }
+        .clock span{
+            list-style:none;
+            font-size: 100px;
+            gap:16px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <section class="clock">
+                <h1 id="date">monday 1 january 2024</h1>
+                <span id="hours">12</span>
+                <span id="colon">:</span>
+                <span id="min">30</span>
+                <span id="colon">:</span>
+                <span id="sec">30</span>
+            </section>
+        </section>
+    </main>
+   <script src="digitalclock.js"></script>
+    
+</body>
+</html>
